@@ -1,2 +1,2 @@
 # Pland
-A gardening app which applies function to flora! 
+A gardening app where functionality meets flora! 
