@@ -16,6 +16,13 @@ function Cards() {
              path="/plants">
             />
             </CardItem>  
+            <CardItem
+             src="images/succulents.jpg"
+             text="Pick Your State"
+             label="State"
+             path="/plants">
+            />
+            </CardItem>  
             </ul>
             </div>
 
