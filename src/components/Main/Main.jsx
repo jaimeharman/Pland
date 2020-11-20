@@ -6,6 +6,7 @@ import '../Main/Main.css';
 function Main() {
   return (
     <div className='main-container'>
+          <img src='mainpage.jpg'  />
       <h1>WHERE FUNCTIONALITY MEETS FLORA</h1>
       <div className='main-btns'>
         <Button
