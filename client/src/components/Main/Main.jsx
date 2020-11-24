@@ -1,7 +1,7 @@
 import React from 'react';
 import '../../App.css';
 import { Button } from '../Button/Button';
-import '../Main/Main.css';
+import './Main.css';
 
 function Main() {
   return (
