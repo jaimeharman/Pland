@@ -26,40 +26,57 @@ function Navbar() {
 
   return (
     <>
+<<<<<<< HEAD:client/src/components/Nav/Navbar.jsx
       <nav className="navbar">
         <div className="navbar-container">
           <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
            Pland <i className="fas fa-seedling"></i>
+=======
+      <nav className='navbar'>
+        <div className='navbar-container'>
+          <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
+            Pland
+>>>>>>> 3fba89826ee78cda93095cc4d98b8c8f272a689f:src/components/Nav/Navbar.jsx
           </Link>
-          <div className="menu-icon" onClick={handleClick}>
-            <i className={click ? "fas fa-times" : "fas fa-bars"} />
+          <div className='menu-icon' onClick={handleClick}>
+            <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
           </div>
-          <ul className={click ? "nav-menu active" : "nav-menu"}>
-            <li className="nav-item">
-              <Link to="/" className="nav-links" onClick={closeMobileMenu}>
+          <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+            <li className='nav-item'>
+              <Link to='/' className='nav-links' onClick={closeMobileMenu}>
                 Home
               </Link>
             </li>
-            <li className="nav-item">
+            <li className='nav-item'>
               <Link
-                to="/Home"
-                className="nav-links"
+                to='/plants'
+                className='nav-links'
                 onClick={closeMobileMenu}
               >
-                Plants
+               Pick Your Plant
               </Link>
             </li>
-            <li className="nav-item">
+            <li className='nav-item'>
               <Link
-                to="/plants"
-                className="nav-links-mobile"
+                to='/Cultivate'
+                className='nav-links'
                 onClick={closeMobileMenu}
               >
-                Create Your Own Garden
+              Cultivate  
+              </Link>
+            </li>
+
+            <li>
+              <Link
+                to='/Signup'
+                className='nav-links-mobile'
+                onClick={closeMobileMenu}
+              >
+                Sign Up
               </Link>
             </li>
           </ul>
-          {button && <Button buttonStyle='btn--outline'>Dig it!</Button>}
+          {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>}
         </div>
       </nav>
     </>
