@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import '../components/Nav/Navbar';
+import '../Nav/Navbar';
 
 
 export default class SignUp {
