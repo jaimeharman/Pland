@@ -26,10 +26,17 @@ function Navbar() {
 
   return (
     <>
+<<<<<<< HEAD:client/src/components/Nav/Navbar.jsx
+      <nav className="navbar">
+        <div className="navbar-container">
+          <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
+           Pland <i className="fas fa-seedling"></i>
+=======
       <nav className='navbar'>
         <div className='navbar-container'>
           <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
             Pland
+>>>>>>> 3fba89826ee78cda93095cc4d98b8c8f272a689f:src/components/Nav/Navbar.jsx
           </Link>
           <div className='menu-icon' onClick={handleClick}>
             <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
