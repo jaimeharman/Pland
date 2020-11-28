@@ -1,12 +1,8 @@
 import React from 'react';
 import '../../App.css';
 import { Button } from '../Button/Button';
-<<<<<<< HEAD:client/src/components/Main/Main.jsx
-import './Main.css';
-=======
-import '../Main/main.css';
+import '../Main/Main.css';
 
->>>>>>> 3fba89826ee78cda93095cc4d98b8c8f272a689f:src/components/Main/Main.jsx
 
 function Main() {
   return (
