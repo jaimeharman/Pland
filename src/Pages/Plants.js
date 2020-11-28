@@ -1,15 +1,8 @@
-import React from 'react';
-import '../../src/App.css';
-import Main from '../components/Main/Main';
-import Cards from '../components/Cards/Cards';
+import React from "react";
+import "../../src/App.css";
 
-function Home () {
-    return (
-        <>
-        <Main />
-        </>
 
-    )
-    };
 
-export default Home;
+export default function Plants() {
+    return <h1 className='Plants'>PICK YOUR PLANT</h1>;
+} 

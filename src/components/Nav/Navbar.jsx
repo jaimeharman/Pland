@@ -30,7 +30,6 @@ function Navbar() {
         <div className='navbar-container'>
           <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
             Pland
-            <i class="fas fa-seedling"></i>
           </Link>
           <div className='menu-icon' onClick={handleClick}>
             <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
@@ -43,26 +42,26 @@ function Navbar() {
             </li>
             <li className='nav-item'>
               <Link
-                to='/services'
-                className='nav-links'
-                onClick={closeMobileMenu}
-              >
-               Plant Identification
-              </Link>
-            </li>
-            <li className='nav-item'>
-              <Link
                 to='/plants'
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
-                Design Garden
+               Pick Your Plant
+              </Link>
+            </li>
+            <li className='nav-item'>
+              <Link
+                to='/Cultivate'
+                className='nav-links'
+                onClick={closeMobileMenu}
+              >
+              Cultivate  
               </Link>
             </li>
 
             <li>
               <Link
-                to='/CreateYourOwnGarden'
+                to='/Signup'
                 className='nav-links-mobile'
                 onClick={closeMobileMenu}
               >
