@@ -16,7 +16,8 @@ const FormSignup = ({submitForm}) => {
     <div className="form-content-right">
       <form className="form" onSubmit={handleSubmit}>
         <h1>
-          Get started with us today! Create your account by filling in your
+          Get started with us today! 
+          Create your account by filling in your
           information below.
         </h1>
         <div className="form-inputs">
