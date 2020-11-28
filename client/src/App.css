@@ -7,7 +7,7 @@
 
 .home,
 .plants,
-.createyourowngarden,
+.cultivate,
 .sign-up {
   display: flex;
   height: 90vh;
@@ -21,16 +21,25 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  color: #fff;
+  color: #000;
   font-size: 100px;
 }
 
-.createyourowngarden {
+.cultivate {
   /* background-image: url('/images/img-1.jpg'); */
   background-position: center;
   background-size: fill;
   background-repeat: no-repeat;
-  color: #fff;
+  color: #000;
+  font-size: 100px;
+}
+
+.members {
+  /* background-image: url('/images/img-1.jpg'); */
+  background-position: center;
+  background-size: fill;
+  background-repeat: no-repeat;
+  color: #000;
   font-size: 100px;
 }
 
@@ -39,6 +48,15 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  color: #fff;
+  color: #000;
   font-size: 100px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'PT Sans', sans-serif;
 }
