@@ -1,13 +1,12 @@
 import React from 'react';
 import '../../App.css';
 import { Button } from '../Button/Button';
-import '../Main/Main.css';
-import images from '../../../public/images/mainpage.jpg';
+import '../Main/main.css';
+
 
 function Main() {
   return (
     <div className='main-container'>
-         <img src={images} />
       <h1>WHERE FUNCTIONALITY MEETS FLORA</h1>
       <div className='main-btns'>
         <Button
