@@ -3,10 +3,9 @@ import "../Design/Design.css";
 import axios from "axios";
 
 export default function Design() {
-    axios
-  .get("https://trefle.io/api/v1/plants?token=Vfe4EOlm7UFekDua6gadyrwdwQBMC-Y_bLQEUkREGjM")
+    axios.get('/plants')
   .then(function(res) {
-    console.log(res.data);
+    console.log(res);
   });
 
     return <div>
