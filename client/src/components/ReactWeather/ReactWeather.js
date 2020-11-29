@@ -8,7 +8,7 @@ import WeatherIcon from "../WeatherIcon/WeatherIcon";
 import "../../css/components/ReactWeather.scss";
 
 const propTypes = {
-    unit: PropTypes.oneOf(["metric", "imperial"]),
+    unit: PropTypes.oneOf(["imperial"]),
     type: PropTypes.oneOf(["geo", "city"]),
     lat: PropTypes.string,
     lon: PropTypes.string,
@@ -19,7 +19,7 @@ const propTypes = {
 };
 
 const defaultProps = {
-    unit: "metric",
+    unit: "imperial",
     type: "city",
     forecast: "today",
     lang: "en",
