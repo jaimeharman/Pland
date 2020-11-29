@@ -1,12 +1,8 @@
 import React from "react";
 import "../../src/App.css";
 import { Form, Button } from 'react-bootstrap';
-
-
-export default function Plants() {
-
-    async function handleClick(event) {
 import Card from '../components/Cards/Card';
+import API from '../utils/api'
 
 export default function Plants() {
 
