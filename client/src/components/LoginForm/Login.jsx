@@ -10,11 +10,11 @@ const FormLogin = () => {
     }
     return (
         <>
-        <div className="form-container">
-        <span className="close-btn"></span>
-        <div className="form-content-left">
+        <div className="form-container-login">
+        <span className="close-btn-log"></span>
+        <div className="form-content-left-log">
             <img src="images/mainpage.jpg" alt="Flowers"
-            className="form-img"/>
+            className="form-img-login"/>
         </div>
         {!isSubmitted ? (
             <FormLogin submitForm={submitForm} />) : 

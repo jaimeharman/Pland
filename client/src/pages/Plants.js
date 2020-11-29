@@ -1,15 +1,19 @@
 import React from "react";
 import "../../src/App.css";
 import { Form, Button } from 'react-bootstrap';
-import API from '../utils/api'
 
 
 export default function Plants() {
 
     async function handleClick(event) {
+import Card from '../components/Cards/Card';
+
+export default function Plants() {
+
+
+    function handleClick(event) {
         event.preventDefault()
         const commonName = document.getElementById("formPlantSearch").value
-        console.log(commonName);
         await API.findPlant(commonName).then((res) => {
             console.log(res)
         }).catch((err) => console.log(err))
@@ -31,6 +35,8 @@ export default function Plants() {
                     Submit
     </Button>
             </Form>
+
+            <Card />
         </div>
     )
 } 
