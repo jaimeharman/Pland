@@ -32,6 +32,7 @@
     "mdbootstrap": "^4.19.1",
     "moment": "^2.29.1",
     "mongoose": "^5.10.15",
+    "morgan": "^1.10.0",
     "node-fetch": "^2.6.1",
     "node-sass": "^4.14.1",
     "nodemon": "^2.0.6",

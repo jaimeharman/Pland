@@ -1,31 +1,18 @@
 import React from "react";
 import "../../src/App.css";
 import { Form, Button } from 'react-bootstrap';
-const axios = require('axios')
+import API from '../utils/api'
 
 
 export default function Plants() {
 
-    function handleClick(event) {
+    async function handleClick(event) {
         event.preventDefault()
-        const plantName = document.getElementById("formPlantSearch").value
-        console.log(plantName);
-
-        axios.get(`\search:${plantName}`).then(function (response){
-            console.log(response);
-        }).catch(function(error){
-            console.log(error);
-        }).then(function(){
-            console.log("it worked");
-        })
-
-        // const promise = axios
-
-        // .get(`/search:${plantName}`)
-        // .then(function (response){
-        //     console.log(response.data);
-        // })
-        // return promise
+        const commonName = document.getElementById("formPlantSearch").value
+        console.log(commonName);
+        await API.findPlant(commonName).then((res) => {
+            console.log(res)
+        }).catch((err) => console.log(err))
     }
 
 
