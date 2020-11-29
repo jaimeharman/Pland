@@ -1,6 +1,6 @@
 const router = require("express").Router();
 const plantRoutes = require("./plantapi");
 
-router.use("/getplant", plantRoutes);
+router.use("/search", plantRoutes);
 
 module.exports = router;

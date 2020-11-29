@@ -2,17 +2,17 @@ import React from "react";
 import "./Cards.css";
 import CardItem from "./CardItem";
 
-function Card() {
+function Card(props) {
   return (
     <div className="cards">
-      <h1>Plant</h1>
+      <h1>{props.common_name}</h1>
       <div className="cards__container">
         <div className="cards__wrapper">
           <ul className="cards__items">
             <CardItem
-              src="images/researchplant.jpg"
-              text="Research your plants"
-              label="Planning"
+              src={props.image_url}
+              text="Click here for more info"
+              label={props.scientific_name}
               path="/plants"
             />
           </ul>

@@ -1,34 +1,24 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "../../src/App.css";
 import { Form, Button } from 'react-bootstrap';
 import Card from '../components/Cards/Card';
-const axios = require('axios');
+import API from '../utils/api'
 
 export default function Plants() {
+    const [plantData, setPlantData] = useState([])
 
-
-    function handleClick(event) {
+    async function handleClick(event) {
         event.preventDefault()
-        const plantName = document.getElementById("formPlantSearch").value
-        console.log(plantName);
+        const commonName = document.getElementById("formPlantSearch").value
+        await API.findPlant(commonName).then((res) => {
+            setPlantData(res.data.data)
 
-        axios.get(`\search:${plantName}`).then(function (response){
-            console.log(response);
-        }).catch(function(error){
-            console.log(error);
-        }).then(function(){
-            console.log("it worked");
-        })
-
-        // const promise = axios
-
-        // .get(`/search:${plantName}`)
-        // .then(function (response){
-        //     console.log(response.data);
-        // })
-        // return promise
+        }).catch((err) => console.log(err))
     }
 
+    useEffect(() => {
+        console.log(plantData);
+    }, [plantData])
 
     return (
         <div className="container">
@@ -45,8 +35,9 @@ export default function Plants() {
                     Submit
     </Button>
             </Form>
-
-            <Card />
+            {plantData.map(plantCard => {
+                return <Card {...plantCard}/>
+            })}
         </div>
     )
 } 
