@@ -1,10 +1,11 @@
 import React from "react";
 import "../../src/App.css";
 import { Form, Button } from 'react-bootstrap';
-const axios = require('axios')
-
+import Card from '../components/Cards/Card';
+const axios = require('axios');
 
 export default function Plants() {
+
 
     function handleClick(event) {
         event.preventDefault()
@@ -44,6 +45,8 @@ export default function Plants() {
                     Submit
     </Button>
             </Form>
+
+            <Card />
         </div>
     )
 } 
