@@ -1,20 +1,24 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "../../src/App.css";
 import { Form, Button } from 'react-bootstrap';
 import Card from '../components/Cards/Card';
 import API from '../utils/api'
 
 export default function Plants() {
+    const [plantData, setPlantData] = useState([])
 
-
-    function handleClick(event) {
+    async function handleClick(event) {
         event.preventDefault()
         const commonName = document.getElementById("formPlantSearch").value
         await API.findPlant(commonName).then((res) => {
-            console.log(res)
+            setPlantData(res.data.data)
+
         }).catch((err) => console.log(err))
     }
 
+    useEffect(() => {
+        console.log(plantData);
+    }, [plantData])
 
     return (
         <div className="container">
@@ -31,8 +35,9 @@ export default function Plants() {
                     Submit
     </Button>
             </Form>
-
-            <Card />
+            {plantData.map(plantCard => {
+                return <Card {...plantCard}/>
+            })}
         </div>
     )
 } 
