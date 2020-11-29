@@ -8,10 +8,7 @@ const FormSignup = ({submitForm}) => {
     = useForm(submitForm, 
         validate
         );
-
-
-
-
+        
   return (
     <div className="form-content-right">
       <form className="form" onSubmit={handleSubmit}>
@@ -83,7 +80,7 @@ const FormSignup = ({submitForm}) => {
         <button className="form-input-btn" type="submit">
             Sign up</button>
             <span className="form-input-login">
-                Already have an account? Login <a href='#'>here</a>
+                Already have an account? Login <a href='http://localhost:3000/members'>Members Page</a>
             </span>
       </form>
     </div>
