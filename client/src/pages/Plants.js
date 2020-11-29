@@ -6,7 +6,7 @@ import { Form, Button } from 'react-bootstrap';
 
 export default function Plants() {
     return (
-        <div>
+        <div className = "container">
             <h1 className='Plants'>PICK YOUR PLANT</h1>
         <Form>
             <Form.Group controlId="formPlantSearch">
