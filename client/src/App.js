@@ -2,11 +2,11 @@ import React from 'react';
 import Navbar from './components/Nav/Navbar';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import '../src/App.css';
-import Home from '../src/pages/Home';
-import Plants from '../src/pages/Plants';
-import Cultivate from '../src/pages/Cultivate'
-import Members from '../src/pages/Members';
-import Signup from '../src/pages/Signup';
+import Home from '../src/Pages/Home';
+import Plants from '../src/Pages/Plants';
+import Cultivate from '../src/Pages/Cultivate';
+import Members from '../src/Pages/Members';
+import Signup from '../src/Pages/Signup';
 
 
 function App() {
