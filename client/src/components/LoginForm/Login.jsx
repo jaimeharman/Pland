@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import LoginSuccess from '../LoginForm/LoginSuccess'
-import '../LoginForm/Loginform.css';
+import '../LoginForm/login.css';
 
 const FormLogin = () => {
     const[isSubmitted, setIsSubmitted] = useState(false)
@@ -25,5 +25,4 @@ const FormLogin = () => {
         </>
     );
 }
-
 export default FormLogin

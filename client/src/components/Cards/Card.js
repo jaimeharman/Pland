@@ -9,12 +9,14 @@ function Card(props) {
       <div className="cards__container">
         <div className="cards__wrapper">
           <ul className="cards__items">
+          <div class="row">
             <CardItem
               src={props.image_url}
               text="Click here for more info"
               label={props.scientific_name}
               path="/plants"
             />
+            </div>
           </ul>
         </div>
       </div>
