@@ -33,7 +33,7 @@ export default function Plants() {
                 </Form.Group>
                 <Button variant="primary" type="submit" onClick={handleClick}>
                     Submit
-    </Button>
+                </Button>
             </Form>
             {plantData.map(plantCard => {
                 return <Card {...plantCard}/>
