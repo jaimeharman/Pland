@@ -1,7 +1,7 @@
 import React from 'react';
 import useLogin from './useLogin';
 import validate from './validate';
-import '../Form/form.css';
+import '../LoginForm/login.css';
 
 const FormLogin = ({submitForm}) => {
     const {handleChange, values, handleSubmit, errors } 
@@ -10,8 +10,8 @@ const FormLogin = ({submitForm}) => {
         );
 
   return (
-      <div className="form-content-right-log">
-        <form className="form-login" onSubmit={handleSubmit}>
+      <div className="form-content">
+        <form className="login" onSubmit={handleSubmit}>
           <h1>
             Log into your account! 
           </h1>
@@ -31,7 +31,7 @@ const FormLogin = ({submitForm}) => {
             {errors.username && <p>{errors.username}</p>}
           </div>
           <div className="form-inputs-login">
-            <label htmlFor="password" className="form-label">
+            <label htmlFor="password" className="form-label-login">
               Password
             </label>
             <input
@@ -56,4 +56,3 @@ const FormLogin = ({submitForm}) => {
   };
   
   export default FormLogin;
-  
