@@ -1,0 +1,41 @@
+body {
+    background: radial-gradient(#e5e5e5, #ffffff, #e5e5e5);
+}
+
+.cultcard {
+
+  width: 33%;
+  padding: 0px;
+  margin: 20px;
+
+}
+
+.cultcard:hover {
+    box-shadow: 5px 10px 20px 1px black;
+}
+
+.cultcard-text {
+    font-size: 1rem; 
+    padding: 0.5rem; 
+}
+
+.cultcontainer-fluid .row {
+    padding-top: 6rem; 
+}
+
+.cultcard-img-top {
+    width: 426.72px;
+    height: 640px;
+    transform: (1);
+}
+
+.cultcard-img-top {
+    transform: (1.8);
+}
+
+.overflow {
+    overflow: hidden;
+}
+
+
+

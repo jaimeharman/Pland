@@ -22,7 +22,7 @@ function Cards() {
             />
             <CardItem
               src={smelltheroses} alt="Smelling Roses" height={20} width={20}
-              text='Compare your plants needs to local weather'
+              text='Continue you research with connections to articles'
               label='Cultivate'
               path='/cultivate'
             />
@@ -44,7 +44,7 @@ function Cards() {
               src={sustainable} alt="green thumb" height={20} width={20}
               text='Find out more about sustainable gardening'
               label='Go Green'
-              path='/sign-up'
+              path="/cultivate"
             />
           </ul>
         </div>
