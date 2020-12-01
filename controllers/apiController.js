@@ -4,7 +4,7 @@ module.exports = {
     findPlant: function (req, res) {
 
         let commonName = req.params.commonName
-        let apiKey = "Vfe4EOlm7UFekDua6gadyrwdwQBMC-Y_bLQEUkREGjM"
+        let apiKey = process.env.REACT_APP_APIKEY
 
         axios
             .get(`https://trefle.io/api/v1/plants/search?token=${apiKey}&q=${commonName}`)
@@ -17,7 +17,7 @@ module.exports = {
     },
 
     findByID: function (req, res) {
-        let apiKey = "Vfe4EOlm7UFekDua6gadyrwdwQBMC-Y_bLQEUkREGjM"
+        let apiKey = process.env.REACT_APP_APIKEY
         let id = req.params.id
 
         axios.get(`https://trefle.io/api/v1/plants/${id}?token=${apiKey}`)

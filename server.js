@@ -5,6 +5,7 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 const cors = require('cors');
 var morgan = require('morgan')
+require('dotenv').config()
 
 // Define middleware here
 app.use(express.urlencoded({ extended: true }));
