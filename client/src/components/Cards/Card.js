@@ -6,7 +6,7 @@ import CardItem from "./CardItem";
 function Card(props) {
 
   return (
-    <div id={props.id} className="cards">
+    <div id={props.id} className="d-inline-block cards">
       <h1>{props.common_name}</h1>
       <div className="cards__container">
         <div className="cards__wrapper">
