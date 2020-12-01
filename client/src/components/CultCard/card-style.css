@@ -3,7 +3,8 @@ body {
 }
 
 .cultcard {
-
+  border: 1px solid rgb(26,23,23);
+  border-radius: 5px;
   width: 33%;
   padding: 0px;
   margin: 20px;
