@@ -14,6 +14,12 @@ export default function Plants() {
             setPlantData(res.data.data)
 
         }).catch((err) => console.log(err))
+
+        const id = "932481"
+        await API.findByID(id).then((res) => {
+            // setPlantData(res.data.data)
+            console.log(res.data)
+        }).catch((err) => console.log(err))
     }
 
     useEffect(() => {

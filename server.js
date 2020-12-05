@@ -5,6 +5,8 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 const cors = require('cors');
 var morgan = require('morgan')
+const path = require('path')
+
 require('dotenv').config()
 
 // Define middleware here
@@ -21,7 +23,8 @@ if (process.env.NODE_ENV === "production") {
 app.use(cors());
 app.use(morgan("dev"))
 
-app.use(express.static(path.join(__dirname, "client", "build")))
+// app.use(express.static(path.join(__dirname, "client", "build")))
+app.use(express.static(path.join(__dirname, "public")));
 
 // Add routes, both API and view
 app.use(routes);
