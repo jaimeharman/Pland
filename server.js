@@ -1,5 +1,5 @@
 const express = require("express");
-const mongoose = require("mongoose");
+// const mongoose = require("mongoose");
 const routes = require("./routes");
 const app = express();
 const PORT = process.env.PORT || 5000;
@@ -31,12 +31,12 @@ app.use(express.static(path.join(__dirname, "client", "build")))
 app.use(routes);
 
 // Connect to the Mongo DB
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/pland", {
-  useCreateIndex: true,
-  useFindAndModify: true,
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-}
+// mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/pland", {
+//   useCreateIndex: true,
+//   useFindAndModify: true,
+//   useNewUrlParser: true,
+//   useUnifiedTopology: true,
+// }
 );
 
 // Start the API server
