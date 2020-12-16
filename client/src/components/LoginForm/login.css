@@ -13,5 +13,12 @@
 
 .login {
     margin-top: 50px;
+    outline-style: dotted; 
+    width: 70%;
+    padding: 20px; 
+    margin: 30px; 
+    
+
     
 }
+
