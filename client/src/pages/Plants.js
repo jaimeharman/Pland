@@ -46,4 +46,4 @@ export default function Plants() {
             })}
         </div>
     )
-} 
+}
