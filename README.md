@@ -29,7 +29,7 @@ This project uses the MIT_License license.
 
 ## Contributers
 
-React Bootstrap Node Express Mongoose MongoDB Heroku Sass MomentJS Material-UI
+React, Bootstrap, Node, Express, Mongoose, MongoDB, Heroku, MomentJS
 
 ## Tests
 
